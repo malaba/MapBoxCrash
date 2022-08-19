@@ -13,6 +13,7 @@
 		5043328328AF94860005DCF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5043328128AF94860005DCF5 /* Main.storyboard */; };
 		5043328528AF94880005DCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5043328428AF94880005DCF5 /* Assets.xcassets */; };
 		5043328828AF94880005DCF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5043328628AF94880005DCF5 /* LaunchScreen.storyboard */; };
+		FF303A21F7DB1CD657A46637 /* Pods_ElectricFeel_MapBoxCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86AEF2221725572C5A27D5 /* Pods_ElectricFeel_MapBoxCrash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		5043328428AF94880005DCF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5043328728AF94880005DCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5043328928AF94880005DCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0C315A3FE5641865D16A16 /* Pods-ElectricFeel-MapBoxCrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricFeel-MapBoxCrash.release.xcconfig"; path = "Target Support Files/Pods-ElectricFeel-MapBoxCrash/Pods-ElectricFeel-MapBoxCrash.release.xcconfig"; sourceTree = "<group>"; };
+		D02CAD53E487DA8907492B97 /* Pods-ElectricFeel-MapBoxCrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricFeel-MapBoxCrash.debug.xcconfig"; path = "Target Support Files/Pods-ElectricFeel-MapBoxCrash/Pods-ElectricFeel-MapBoxCrash.debug.xcconfig"; sourceTree = "<group>"; };
+		FA86AEF2221725572C5A27D5 /* Pods_ElectricFeel_MapBoxCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectricFeel_MapBoxCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF303A21F7DB1CD657A46637 /* Pods_ElectricFeel_MapBoxCrash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DC1499D39624855D55FC83B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D02CAD53E487DA8907492B97 /* Pods-ElectricFeel-MapBoxCrash.debug.xcconfig */,
+				BF0C315A3FE5641865D16A16 /* Pods-ElectricFeel-MapBoxCrash.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5043326F28AF94860005DCF5 = {
 			isa = PBXGroup;
 			children = (
 				5043327A28AF94860005DCF5 /* MapBoxCrash */,
 				5043327928AF94860005DCF5 /* Products */,
+				3DC1499D39624855D55FC83B /* Pods */,
+				71453C2F2B334C1488663378 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = MapBoxCrash;
 			sourceTree = "<group>";
 		};
+		71453C2F2B334C1488663378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA86AEF2221725572C5A27D5 /* Pods_ElectricFeel_MapBoxCrash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5043328C28AF94880005DCF5 /* Build configuration list for PBXNativeTarget "MapBoxCrash" */;
 			buildPhases = (
+				DC910CD1E0EF1D86B8FA970F /* [CP] Check Pods Manifest.lock */,
 				5043327428AF94860005DCF5 /* Sources */,
 				5043327528AF94860005DCF5 /* Frameworks */,
 				5043327628AF94860005DCF5 /* Resources */,
+				C6CD174C8C08F815A9CAF24E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6CD174C8C08F815A9CAF24E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectricFeel-MapBoxCrash/Pods-ElectricFeel-MapBoxCrash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectricFeel-MapBoxCrash/Pods-ElectricFeel-MapBoxCrash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElectricFeel-MapBoxCrash/Pods-ElectricFeel-MapBoxCrash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC910CD1E0EF1D86B8FA970F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElectricFeel-MapBoxCrash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5043327428AF94860005DCF5 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5043328D28AF94880005DCF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02CAD53E487DA8907492B97 /* Pods-ElectricFeel-MapBoxCrash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		5043328E28AF94880005DCF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0C315A3FE5641865D16A16 /* Pods-ElectricFeel-MapBoxCrash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
